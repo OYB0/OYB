@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عرض الكود</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        pre {
+            padding: 10px;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+    </style>
+</head>
+<body>
+    <h1>عرض الكود</h1>
+    <pre id="codeOutput">جارٍ تحميل الكود...</pre>
+
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-app.js";
+        import { getDatabase, ref, get } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-database.js";
+
+        const firebaseConfig = {
+            apiKey: "AIzaSyDfFN6qdkDpGKQj-R_p6LQWOCwHcNzyQWo",
+            authDomain: "oyb3mk.firebaseapp.com",
+            databaseURL: "https://oyb3mk-default-rtdb.firebaseio.com",
+            projectId: "oyb3mk",
+            storageBucket: "oyb3mk.firebasestorage.app",
+            messagingSenderId: "1005537301616",
+            appId: "1:1005537301616:web:0b6c38dbff0884aef310b5",
+            measurementId: "G-JWNZHFMCEM"
+        };
+
+        const app = initializeApp(firebaseConfig);
+        const database = getDatabase(app);
+
+        const urlParams = new URLSearchParams(window.location.search);
+        const codeId = urlParams.get('id');
+        const codeOutput = document.getElementById('codeOutput');
+
+        if (codeId) {
+            const codeRef = ref(database, `codes/${codeId}`);
+            get(codeRef).then(snapshot => {
+                if (snapshot.exists()) {
+                    const codeData = snapshot.val();
+                    codeOutput.textContent = codeData.code;
+                } else {
+                    codeOutput.textContent = 'الكود غير موجود!';
+                }
+            }).catch(error => {
+                codeOutput.textContent = 'حدث خطأ أثناء جلب الكود.';
+                console.error(error);
+            });
+        } else {
+            codeOutput.textContent = 'لم يتم توفير معرف الكود.';
+        }
+    </script>
+</body>
+</html>
