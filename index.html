@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>شارك الأكواد بسهولة</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        textarea {
+            width: 100%;
+            height: 300px;
+            font-family: monospace;
+            font-size: 16px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            margin-bottom: 10px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        #output {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+            word-wrap: break-word;
+        }
+    </style>
+</head>
+<body>
+    <h1>شارك الأكواد بسهولة</h1>
+    <textarea id="codeInput" placeholder="اكتب الكود هنا..."></textarea><br>
+    <button id="saveButton">حفظ الكود</button>
+
+    <div id="output"></div>
+
+    <script type="module">
+        // إعداد Firebase
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-app.js";
+        import { getDatabase, ref, push } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-database.js";
+
+        const firebaseConfig = {
+            apiKey: "AIzaSyDfFN6qdkDpGKQj-R_p6LQWOCwHcNzyQWo",
+            authDomain: "oyb3mk.firebaseapp.com",
+            databaseURL: "https://oyb3mk-default-rtdb.firebaseio.com",
+            projectId: "oyb3mk",
+            storageBucket: "oyb3mk.firebasestorage.app",
+            messagingSenderId: "1005537301616",
+            appId: "1:1005537301616:web:0b6c38dbff0884aef310b5",
+            measurementId: "G-JWNZHFMCEM"
+        };
+
+        const app = initializeApp(firebaseConfig);
+        const database = getDatabase(app);
+
+        // حفظ الكود
+        const saveButton = document.getElementById('saveButton');
+        const codeInput = document.getElementById('codeInput');
+        const outputDiv = document.getElementById('output');
+
+        saveButton.addEventListener('click', async () => {
+            const code = codeInput.value;
+            if (!code) {
+                alert('يرجى إدخال كود!');
+                return;
+            }
+
+            const codesRef = ref(database, 'codes');
+            const newCodeRef = await push(codesRef, { code });
+            const codeId = newCodeRef.key;
+            const link = `${window.location.origin}/view.html?id=${codeId}`;
+
+            outputDiv.innerHTML = `<p>تم حفظ الكود بنجاح!</p>
+                                   <p><a href="${link}" target="_blank">افتح الكود هنا</a></p>`;
+        });
+    </script>
+</body>
+</html>
