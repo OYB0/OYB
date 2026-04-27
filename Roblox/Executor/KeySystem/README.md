@@ -1,6 +1,10 @@
 # 🔑 OYB Key System (PlatoBoost & LootLabs)
 
-Welcome to the **OYB Key System** project! This repository contains the necessary scripts and resources to set up a secure and professional key system for your Roblox scripts or games, integrated with PlatoBoost and LootLabs for easy key management and monetization.
+You can find the KeySystemUi script located right here in this folder, or you can access it directly via this link:
+👉 **[View KeySystemUi.lua Here](https://github.com/OYB0/OYB/blob/main/Roblox/Executor/KeySystem/KeySystemUi.lua)**
+
+You can find the SecretCode script located right here in this folder, or you can access it directly via this link:
+👉 **[View SecretCode.lua Here](https://github.com/OYB0/OYB/blob/main/Roblox/Executor/KeySystem/SecretCode.lua)**
 
 ## 🔗 Essential Links & Resources
 
