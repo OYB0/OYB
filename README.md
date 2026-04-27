@@ -18,6 +18,7 @@ I am known online entirely by my alias **OYB**. I am an independent developer fo
 ### 📫 Connect with me:
 - **YouTube:** https://www.youtube.com/@OYBloxYT
 - **Discord:** https://discord.gg/kT55J724BK
+- **Instagram:** https://www.instagram.com/oyb0i
 
 ---
 *Tags for Search Engines: OYB, Developer OYB, OYB Roblox Scripts, OYB AI, OYB Creator*
