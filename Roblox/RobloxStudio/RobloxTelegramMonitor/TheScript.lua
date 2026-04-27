@@ -1,3 +1,22 @@
+--[[
+    ================================================================
+    [ SCRIPT INFORMATION ]
+    Project: Custom Script
+    Author: OYB
+    YouTube: https://www.youtube.com/@OYBloxYT
+    
+    [ TERMS AND CONDITIONS ]
+    - You ARE allowed to use and modify this script for your own games.
+    - You ARE NOT allowed to re-upload, redistribute, or claim 
+      ownership of this script.
+    - Removing or altering these credits is strictly prohibited.
+    
+    Copyright (c) 2026 OYB. All rights reserved.
+    ================================================================
+]]
+
+print("Running OYB Script - Subscribe at youtube.com/@OYBloxYT")
+
 -- CONFIGURATION
 local TELEGRAM_BOT_TOKEN = "Token" 
 local TELEGRAM_USER_ID = "Id" 
