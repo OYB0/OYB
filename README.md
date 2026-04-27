@@ -8,28 +8,24 @@
   <a href="https://discord.gg/kT55J724BK" target="_blank">
     <img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" />
   </a>
-  <a href="https://www.instagram.com/oyb0i/" target="_blank">
-    <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" />
-  </a>
 </p>
 
 ---
 
 ## 👨‍💻 Overview
-Specializing in **Roblox Game Scripting (Luau)**, **Backend Architecture**, and **System Security**. Focused on delivering scalable, secure, and highly optimized open-source resources for the development community.
+Specializing in **Roblox Game Scripting (Luau)**, **Backend Architecture**, and **System Security**. Focused on delivering optimized open-source resources for the development community.
 
 ## 🛠️ Technical Stack
 * **Languages:** Luau, Python, JavaScript, HTML/CSS
-* **Core Focus:** Advanced GUI Frameworks, Cross-Server Communication (MemoryStores), API Integrations.
-* **Security:** Anti-Bypass Mechanisms, Authentication Systems.
+* **Core Focus:** Advanced GUI Frameworks, Cross-Server Communication, API Integrations.
 
 ## 🚀 Featured Projects
-- 🔑 **[OYB Key System](https://github.com/OYB0/OYB/tree/main/Roblox/Executor/KeySystem):** Secure, un-bypassable authentication integrating PlatoBoost and LootLabs.
-- 📱 **[OYB Telegram Monitor](https://github.com/OYB0/OYB/tree/main/Roblox/RobloxStudio/RobloxTelegramMonitor):** Seamless bridge connecting Roblox servers to Telegram bots for live data logging.
-- 🛡️ **[OYB Events Panel](https://github.com/OYB0/OYB/tree/main/Roblox/RobloxStudio/EventsPanel):** Cross-server administrative panel utilizing Roblox MemoryStores.
+- 🔑 **[OYB Key System](https://github.com/OYB0/OYB0/tree/main/Roblox/Executor/KeySystem):** Secure authentication system.
+- 📱 **[OYB Telegram Monitor](https://github.com/OYB0/OYB0/tree/main/Roblox/RobloxStudio/RobloxTelegramMonitor):** Roblox-to-Telegram bridge.
+- 🛡️ **[OYB Events Panel](https://github.com/OYB0/OYB0/tree/main/Roblox/RobloxStudio/EventsPanel):** Administrative panel system.
 
 <br>
 
 <div align="center">
-  <i>Tags: OYB DEVELOPER, OYB, Roblox Scripts, OYB Hub, Luau Scripter, Backend Developer.</i>
+  <i>Tags: OYB DEVELOPER, OYB, Roblox Scripts, OYB Hub, Luau Scripter.</i>
 </div>
