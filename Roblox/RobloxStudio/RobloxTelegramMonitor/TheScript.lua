@@ -3,7 +3,7 @@
     [ SCRIPT INFORMATION ]
     Project: Custom Script
     Author: OYB
-    YouTube: https://www.youtube.com/@OYBloxYT
+    YouTube: https://www.youtube.com/channel/UCAlXXV1Hbvf7WbfXARuVtiQ
     
     [ TERMS AND CONDITIONS ]
     - You ARE allowed to use and modify this script for your own games.
