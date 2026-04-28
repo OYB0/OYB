@@ -1,6 +1,6 @@
 <h1 align="center">🚀 OYB DEVELOPER | Official Scripts</h1>
 <p align="center">
-  <a href="https://www.youtube.com/@OYBloxYT" target="_blank">
+  <a href="https://www.youtube.com/channel/UCAlXXV1Hbvf7WbfXARuVtiQ" target="_blank">
     <img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="YouTube" />
   </a>
   <a href="https://discord.gg/kT55J724BK" target="_blank">
