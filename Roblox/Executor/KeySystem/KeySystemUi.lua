@@ -1,5 +1,5 @@
 -- [[ OYB HUB - UNIVERSAL SECURE KEY SYSTEM ]]
--- Developer: Wissam
+-- Developer: OYB
 -- Supports: PC & Mobile (Delta, Velocity, Fluxus, Hydrogen, etc.)
 
 -------------------------------------------------------------------------------
@@ -24,7 +24,7 @@ local Config = {
     InstagramURL    = "https://www.instagram.com/oyb0i/",
     
     ShowYoutube     = false,
-    YoutubeURL      = "https://www.youtube.com/@OYBloxYT",
+    YoutubeURL      = "https://www.youtube.com/channel/UCAlXXV1Hbvf7WbfXARuVtiQ",
 
     -- [5] File System
     KeyFileName     = "Mykey.txt", -- The name of the file where the valid key will be saved for auto-login
