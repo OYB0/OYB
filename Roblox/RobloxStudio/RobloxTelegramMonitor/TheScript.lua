@@ -15,7 +15,7 @@
     ================================================================
 ]]
 
-print("Running OYB Script - Subscribe at youtube.com/@OYBloxYT")
+print("Running OYB Script - Subscribe at youtube.com/@OYBOfficial")
 
 -- CONFIGURATION
 local TELEGRAM_BOT_TOKEN = "Token" 
